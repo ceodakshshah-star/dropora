@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dropora™ | One Brand. Many Worlds.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter",Arial,sans-serif;
+}
+
+body{
+  background:#05070c;
+  color:#ffffff;
+  overflow-x:hidden;
+}
+
+/* AMBIENT CORE */
+.ambient{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at 25% 30%, rgba(200,220,255,0.35), transparent 45%),
+    radial-gradient(circle at 75% 70%, rgba(150,200,255,0.35), transparent 45%);
+  filter:blur(160px);
+  z-index:-1;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:30px 90px;
+  background:rgba(5,7,12,0.55);
+  backdrop-filter:blur(14px);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.brand{
+  font-size:2rem;
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+.nav-tag{
+  font-size:.9rem;
+  opacity:.7;
+}
+
+/* HERO */
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 30px;
+}
+
+.hero h1{
+  font-size:4.6rem;
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+.hero span{
+  color:#9ecbff;
+}
+
+.hero p{
+  margin:22px auto;
+  max-width:620px;
+  font-size:1.1rem;
+  line-height:1.8;
+  opacity:.85;
+}
+
+.scroll{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 38px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.18);
+  backdrop-filter:blur(14px);
+  border-radius:999px;
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* ECOSYSTEM */
+.ecosystem{
+  padding:140px 90px;
+}
+
+.ecosystem h2{
+  font-size:3rem;
+  font-weight:800;
+  text-align:center;
+  margin-bottom:80px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+}
+
+/* GLASS CARD */
+.card{
+  padding:40px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.18);
+  backdrop-filter:blur(20px);
+  border-radius:28px;
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 40px 80px rgba(0,0,0,.4);
+}
+
+.card h3{
+  font-size:1.6rem;
+  margin-bottom:10px;
+}
+
+.card p{
+  opacity:.8;
+  line-height:1.6;
+  margin-bottom:25px;
+}
+
+.card a{
+  text-decoration:none;
+  color:#9ecbff;
+  font-weight:700;
+}
+
+/* STORY */
+.story{
+  padding:120px 30px;
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.story h2{
+  font-size:2.6rem;
+  font-weight:800;
+  margin-bottom:24px;
+}
+
+.story p{
+  font-size:1.05rem;
+  line-height:1.9;
+  opacity:.85;
+}
+
+/* FUTURE */
+.future{
+  padding:120px 30px;
+  text-align:center;
+}
+
+.future h2{
+  font-size:2.4rem;
+  margin-bottom:20px;
+}
+
+.future p{
+  max-width:700px;
+  margin:auto;
+  opacity:.8;
+  line-height:1.8;
+}
+
+/* FOOTER */
+footer{
+  padding:70px 30px;
+  text-align:center;
+  opacity:.7;
+  font-size:.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+  nav{padding:20px 30px}
+  .hero h1{font-size:3.2rem}
+  .ecosystem{padding:100px 30px}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<div class="ambient"></div>
+
+<nav>
+  <div class="brand">Dropora</div>
+  <div class="nav-tag">One Brand. Many Worlds.</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Welcome to <span>Dropora</span></h1>
+    <p>
+      Dropora is a growing ecosystem of thoughtfully built
+      brands — each designed to serve a distinct part of
+      modern life.
+    </p>
+    <a href="#ecosystem" class="scroll">Explore Ecosystem</a>
+  </div>
+</section>
+
+<!-- ECOSYSTEM -->
+<section id="ecosystem" class="ecosystem">
+  <h2>The Dropora Worlds</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Dropora Living</h3>
+      <p>Calm, functional essentials designed for modern homes and workspaces.</p>
+      <a href="living/">Enter →</a>
+    </div>
+
+    <div class="card">
+      <h3>Dropora Sports</h3>
+      <p>Performance-driven gear built for strength, movement, and intensity.</p>
+      <a href="/sports">Enter →</a>
+    </div>
+
+    <div class="card">
+      <h3>Dropora Lifestyle</h3>
+      <p>Fresh, modern everyday products designed to feel right.</p>
+      <a href="/lifestyle">Enter →</a>
+    </div>
+
+    <div class="card">
+      <h3>Dropora Stationery</h3>
+      <p>Focus-first tools crafted for clarity, learning, and deep work.</p>
+      <a href="/stationery">Enter →</a>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <h2>Why Dropora Exists</h2>
+  <p>
+    Dropora was created with a simple belief: modern life
+    deserves products built with intention. Instead of
+    offering everything in one place, Dropora grows focused
+    brands — each dedicated to doing one thing well.
+  </p>
+</section>
+
+<!-- FUTURE -->
+<section class="future">
+  <h2>Built to Grow</h2>
+  <p>
+    Dropora is designed as a long-term ecosystem. As needs
+    evolve, new worlds will emerge — always connected,
+    always intentional.
+  </p>
+</section>
+
+<footer>
+  © 2026 Dropora™ — A growing ecosystem<br>
+  WhatsApp: 9511787931 · Email: ceodakshshah@gmail.com
+</footer>
+
+</body>
+</html>
