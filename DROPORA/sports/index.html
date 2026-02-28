@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropora Sports™ | Built for Performance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", Arial, sans-serif;
+    }
+
+    body {
+      background: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* ENERGY BACKGROUND */
+    .energy {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255,60,0,0.35), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(255,140,0,0.35), transparent 40%);
+      filter: blur(120px);
+      z-index: -1;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 70px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+
+    .brand {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .tag {
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 0 70px;
+      gap: 40px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      line-height: 1.05;
+    }
+
+    .hero h1 span {
+      color: #ff3c00;
+    }
+
+    .hero p {
+      max-width: 420px;
+      margin: 20px 0;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 16px 38px;
+      background: linear-gradient(90deg, #ff3c00, #ff8c00);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 6px;
+      letter-spacing: 1px;
+    }
+
+    /* POWER BLOCK */
+    .power-box {
+      height: 380px;
+      border: 3px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* PRODUCT */
+    .product {
+      margin: 100px 70px;
+      padding: 50px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(20px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .product h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+    }
+
+    .product p {
+      margin: 15px 0;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    .product ul {
+      list-style: none;
+      margin: 15px 0;
+    }
+
+    .product li {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      margin: 20px 0;
+    }
+
+    .price span {
+      font-size: 1rem;
+      opacity: 0.5;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 34px;
+      background: linear-gradient(90deg, #ff3c00, #ff8c00);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero,
+      .product {
+        grid-template-columns: 1fr;
+        padding: 40px;
+      }
+
+      nav {
+        padding: 20px 30px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="energy"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="brand">Dropora Sports</div>
+  <div class="tag">Built for Performance</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>TRAIN<br><span>HARDER</span></h1>
+    <p>
+      Performance-driven sports and fitness essentials
+      designed for strength, endurance, and modern athletes.
+    </p>
+    <a href="#product" class="cta">SHOP PERFORMANCE</a>
+  </div>
+
+  <div class="power-box">POWER</div>
+</section>
+
+<!-- PRODUCT -->
+<section id="product" class="product">
+  <div>
+    <h2>Pro Fitness Resistance Kit</h2>
+
+    <p>
+      Built to push limits. Durable, portable, and designed
+      for intense training routines.
+    </p>
+
+    <ul>
+      <li>✔ Heavy-duty resistance bands</li>
+      <li>✔ Sweat-resistant grip</li>
+      <li>✔ Portable & durable</li>
+      <li>✔ Free Delivery</li>
+    </ul>
+
+    <div class="price">
+      ₹1299 <span>₹2499</span>
+    </div>
+
+    <a href="https://wa.me/919511787931" class="btn">
+      Order on WhatsApp
+    </a>
+
+    <p style="margin-top:15px; font-size:0.85rem; opacity:0.7;">
+      Support:
+      <a href="mailto:ceodakshshah@gmail.com" style="color:#ff8c00; text-decoration:none;">
+        ceodakshshah@gmail.com
+      </a>
+    </p>
+  </div>
+
+  <div class="power-box">PERFORMANCE</div>
+</section>
+
+<footer>
+  © 2026 Dropora Sports™ — A Dropora Brand
+</footer>
+
+</body>
+</html>
